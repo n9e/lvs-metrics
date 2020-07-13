@@ -11,7 +11,7 @@
     },
     "transfer": {
         "enable": true,
-        "addr": "http://127.0.0.1:1988/v1/push",
+        "addr": "http://127.0.0.1:2058/api/collector/push",
         "interval": 30,
         "timeout": 1000
     }
