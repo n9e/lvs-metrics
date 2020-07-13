@@ -2,7 +2,7 @@ default: help
 
 NAME := lvs-metrics
 COMMIT := $(shell git rev-parse HEAD 2> /dev/null || true)
-GITHUB_SRC := github.com/mesos-utility
+GITHUB_SRC := github.com/weizhenqian
 CURDIR_LINK := $(CURDIR)/Godeps/_workspace/src/$(GITHUB_SRC)
 export GOPATH := $(CURDIR)/Godeps/_workspace
 
@@ -24,7 +24,7 @@ RPMBUILD = $(shell				\
 
 ## Make bin for lvs-metrics.
 bin: ${CURDIR_LINK}
-	go build -i -ldflags "-X github.com/mesos-utility/lvs-metrics/g.Version=${VERSION}" -o lvs-metrics .
+	go build -i -ldflags "-X github.com/weizhenqian/lvs-metrics/g.Version=${VERSION}" -o lvs-metrics .
 
 ## Get godep and restore dep.
 godep:

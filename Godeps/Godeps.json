@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/mesos-utility/lvs-metrics",
+	"ImportPath": "github.com/weizhenqian/lvs-metrics",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v74",
 	"Deps": [

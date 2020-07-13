@@ -4,9 +4,9 @@ import (
 	"flag"
 
 	"github.com/golang/glog"
-	"github.com/mesos-utility/lvs-metrics/cron"
-	"github.com/mesos-utility/lvs-metrics/g"
-	"github.com/mesos-utility/lvs-metrics/http"
+	"github.com/weizhenqian/lvs-metrics/cron"
+	"github.com/weizhenqian/lvs-metrics/g"
+	"github.com/weizhenqian/lvs-metrics/http"
 )
 
 var cfg = flag.String("c", "cfg.json", "configuration file")

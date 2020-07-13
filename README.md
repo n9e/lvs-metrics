@@ -1,5 +1,5 @@
 # **lvs-metrics** <sup><sub>_lvs metrics collector for open-falcon_</sub></sup>
-[![Build Status](https://travis-ci.org/mesos-utility/lvs-metrics.svg?branch=master)](https://travis-ci.org/mesos-utility/lvs-metrics)
+[![Build Status](https://travis-ci.org/weizhenqian/lvs-metrics.svg?branch=master)](https://travis-ci.org/weizhenqian/lvs-metrics)
 
 lvs metrics collector for open-falcon.
 
@@ -25,7 +25,7 @@ or
 
 #### Only needed in compile machine.
 ```console
-$ git clone https://github.com/mesos-utility/lvs-metrics.git
+$ git clone https://github.com/weizhenqian/lvs-metrics.git
 $ cd lvs-metrics
 $ make bin
 ```

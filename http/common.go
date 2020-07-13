@@ -5,7 +5,7 @@ import (
 	"github.com/toolkits/file"
 	"net/http"
 
-	"github.com/mesos-utility/lvs-metrics/g"
+	"github.com/weizhenqian/lvs-metrics/g"
 )
 
 func configCommonRoutes() {

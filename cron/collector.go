@@ -10,7 +10,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/google/seesaw/ipvs"
-	"github.com/mesos-utility/lvs-metrics/g"
+	"github.com/weizhenqian/lvs-metrics/g"
 	"github.com/open-falcon/common/model"
 )
 

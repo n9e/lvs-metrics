@@ -1,7 +1,6 @@
 package g
 
 import (
-	"back-falcon-plus/modules/hbs/g"
 	"fmt"
 	"os"
 	"os/exec"
@@ -14,11 +13,14 @@ import (
 
 // get hostname
 func Hostname() (string, error) {
-	if g.Config().Endpoint.Spectfy != nil {
-		hostname := g.Config().Endpoint.Spectfy
-		err := nil
+	var hostname string
+	var err error
+	if Config().Endpoint.Spectfy != "127.0.0.1" {
+		hostname = Config().Endpoint.Spectfy
+		err = nil
 	} else {
-		hostname, err := exec.Command("bash", "-c", g.Config().Endpoint.EndpointShell).CombinedOutput()
+		bs, err := exec.Command("bash", "-c", Config().Endpoint.EndpointShell).CombinedOutput()
+		hostname = strings.TrimSpace(string(bs))
 		if err != nil {
 			glog.Warningf("ERROR: os.Hostname() fail %v", err)
 		}

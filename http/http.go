@@ -6,7 +6,7 @@ import (
 	_ "net/http/pprof"
 
 	"github.com/golang/glog"
-	"github.com/mesos-utility/lvs-metrics/g"
+	"github.com/weizhenqian/lvs-metrics/g"
 )
 
 type Dto struct {
