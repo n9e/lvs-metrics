@@ -1,8 +1,10 @@
 package g
 
 import (
+	"back-falcon-plus/modules/hbs/g"
 	"fmt"
 	"os"
+	"os/exec"
 	"runtime/pprof"
 	"strconv"
 	"strings"
@@ -12,9 +14,14 @@ import (
 
 // get hostname
 func Hostname() (string, error) {
-	hostname, err := os.Hostname()
-	if err != nil {
-		glog.Warningf("ERROR: os.Hostname() fail %v", err)
+	if g.Config().Endpoint.Spectfy != nil {
+		hostname := g.Config().Endpoint.Spectfy
+		err := nil
+	} else {
+		hostname, err := exec.Command("bash", "-c", g.Config().Endpoint.EndpointShell).CombinedOutput()
+		if err != nil {
+			glog.Warningf("ERROR: os.Hostname() fail %v", err)
+		}
 	}
 	return hostname, err
 }

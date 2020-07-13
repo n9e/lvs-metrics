@@ -5,6 +5,10 @@
         "enable": false,
         "listen": "0.0.0.0:1987"
     },
+    "endpoint": {
+        "specify": "127.0.0.1",
+        "shell": "/bin/jq -r '.local_ip' /etc/info.json"                       
+    },
     "transfer": {
         "enable": true,
         "addr": "http://127.0.0.1:1988/v1/push",

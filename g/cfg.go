@@ -22,12 +22,18 @@ type TransferConfig struct {
 	Timeout  int    `json:"timeout"`
 }
 
+type EndpointConfig struct {
+	Spectfy       string `json:"specify"`
+	EndpointShell string `json:"shell"`
+}
+
 // global config file
 type GlobalConfig struct {
 	Debug      bool            `json:"debug"`
 	AttachTags string          `json:"attachtags"`
 	Http       *HttpConfig     `json:"http"`
 	Transfer   *TransferConfig `json:"transfer"`
+	Endpoint   *EndpointConfig `json:"endpoint"`
 }
 
 var (

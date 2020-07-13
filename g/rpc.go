@@ -3,13 +3,14 @@ package g
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/toolkits/net"
 	"math"
 	"net/http"
 	"net/rpc"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/toolkits/net"
 
 	"github.com/golang/glog"
 	"github.com/open-falcon/common/model"
