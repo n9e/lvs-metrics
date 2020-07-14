@@ -43,9 +43,13 @@ Edit cfg.json configuration file.
         "enable": false,
         "listen": "0.0.0.0:1987"
     },
+    "endpoint": {
+        "specify": "127.0.0.1",
+        "shell": "/bin/jq -r '.local_ip' /etc/info.json"（此处我写的命令仅适配我自己的服务器，请编写适配你自己的shell命令）                       
+    },
     "transfer": {
         "enable": true,
-        "addr": "http://127.0.0.1:1988/v1/push", # Installed falcon agent in host.
+        "addr": "http://127.0.0.1:2058/api/collector/push",
         "interval": 30,
         "timeout": 1000
     }
@@ -59,6 +63,10 @@ or
     "http": {
         "enable": false,
         "listen": "0.0.0.0:1987"
+    },
+    "endpoint": {
+        "specify": "127.0.0.1",
+        "shell": "/bin/jq -r '.local_ip' /etc/info.json"（此处我写的命令仅适配我自己的服务器，请编写适配你自己的shell命令）                       
     },
     "transfer": {
         "enable": true,
