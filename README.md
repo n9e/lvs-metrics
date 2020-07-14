@@ -1,7 +1,10 @@
-# **lvs-metrics** <sup><sub>_lvs metrics collector for open-falcon_</sub></sup>
+# **lvs-metrics** <sup><sub>_lvs metrics collector for n9e_</sub></sup>
 [![Build Status](https://travis-ci.org/weizhenqian/lvs-metrics.svg?branch=master)](https://travis-ci.org/weizhenqian/lvs-metrics)
 
-lvs metrics collector for open-falcon.
+lvs metrics collector for n9e.
+
+##Change Log
+修改了配置文件，新增了特殊化的endpoint及自定义shell命令的两种方式。
 
 ## Dependencies
 
